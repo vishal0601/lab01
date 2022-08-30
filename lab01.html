@@ -1,0 +1,171 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+                  <style>  
+      /*Internal CSS using element name*/  
+             body{background-color:rgb(101, 101, 109);   
+             text-align: left;
+            
+
+        }  
+        h2{
+            font-size:45px;
+        }
+        div{
+            font-size:25px;
+        }
+              
+   .happy{
+      color:rgb(5, 5, 5);
+      font-style:bold;
+   }
+   #heading{
+      color:brown;
+   }
+             
+            .container {
+                position: relative;
+                text-align: center;
+                color: rgb(231, 212, 212)
+                /* font-size: 50px; */
+                }
+                .top-left {
+                position: absolute;
+                top: 8px;
+                left: 16px;
+                font-size: 50px;
+                    }
+        /*Internal CSS using class name*/  
+            .yellow{color: rgb(211, 162, 29);
+                font-size:30px;;
+            }  
+            .rosegold{color: rgb(236, 202, 202);}  
+            .green{color: green;} 
+            table,th{
+                border:1px solid black;
+                border: collapse;
+            } 
+            tr{
+                height:50px
+            }
+            input{
+                border:solid 3px black;
+                height:20px;
+                width:400px;
+
+            }
+      </style>  
+    </head>  
+  <body>  
+    <!-- <h1>The Mars Project</h1> -->
+    <div class = "container">
+        <img src="projectimg1.jpg" 
+        width = "1500"
+        height = "600"
+        alt="img">
+        <div class="top-left">The MARS<br> Project</div>
+        <div style="position: absolute;top: 8px;right: 16px;font-size: 50px;">
+            
+                <input type="Submit" value = "More Info" /> 
+            
+        
+        </div>
+          
+
+        
+
+    </div>
+    
+
+   <h2>Welcome to the new Era(Fill the form to enroll)!</h2>  
+    
+                <form action = "backend.php">
+                    <!-- in label after for id is entered (it is used when we select the name option blank is selected)-->
+                    <!-- <label for="name">Name</label> -->
+                     <div class="happy">
+                        <!-- name = "myName" is telling backend that what to take as email -->
+                        Name:<input type="text" name = "myName" id="name">
+                     </div>
+                     <br>
+                     <div>
+                        Email:<input type="email" name = "myEmail" >
+                     </div>
+                     <br>
+                     <div>
+                        Role  :<input type="text" name = "myRole">
+                     </div>
+                     <br>
+                     <!-- using checkboxes -->
+                     <div>
+                        Are you eligible?<input type="checkbox" name = "myeligibility">
+                     </div>
+                     <br>
+                     <!-- if you want a checkbox checked -->
+                     <div>
+                        Are you fine?<input type="checkbox" name = "myeligibility" checked>
+                     </div>
+                     <br>
+                     <!-- radio buttons -->
+                     <div>
+                        <!-- if name is same for checkboxes then only one can be selected -->
+                        Gender:Male<input type="radio" name = "mygender">
+                               Female<input type="radio" name="mygender">
+                     </div>
+                     <br>
+                     <!-- example of adding select option -->
+                     <div>
+                         <label for="Food">Food</label> 
+                         <select name="FoodType" id ="food">
+                            <option value ="Organic">Organic</option>
+                            <option value ="Inorganic" selected>Inorganic</option>
+                         </select>
+                     </div>
+                     <br>
+                     <div>
+                        Write about yourself:<br><br><textarea name ="mytext" cols="100" rows="10";></textarea>
+                      </div>
+                      <br>
+                      <br> 
+                     <div>
+                      <input type="Submit" value = "Submit" >
+                      <input type="Reset" value = "Reset">
+                     </div>
+                     
+                     
+                 </form>
+                 <p class="yellow">Refer below given table:</p>
+                 <br>
+
+                 <table style="width:100%">
+                     <tr>
+                         <th> Role cat.</th>
+                         <th> Batch</th>
+                         <th> Age</th>
+                         <th> Health Issues</th>
+
+                     </tr>
+                     <tr>
+                        <th> A</th>
+                        <th> First</th>
+                        <th> 34-64</th>
+                        <th> No</th>
+
+                    </tr>
+                    <tr>
+                        <th> B</th>
+                        <th> Second</th>
+                        <th> 64+</th>
+                        <th> Yes</th>
+
+                    </tr>
+                    <tr>
+                        <th> C</th>
+                        <th> Third</th>
+                        <th> 25-34</th>
+                        <th> No</th>
+
+                    </tr>
+                 </table>
+                 
+  </body>  
+</html>  
